@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import {quickSort} from './dsa/Sorting/QuickSort'
-import {merge} from './dsa/Sorting/MergeSort'
+import {mergeSort} from './dsa/Sorting/MergeSort'
 
 console.log('sort: ', quickSort([1,3,2,7,4,8,9]))
-console.log('merge: ', merge([2,3,9,7], [4,1]))
+console.log('merge: ', mergeSort([2,3,9,7,1,4]));
 function App() {
   return (
     <div className="App">

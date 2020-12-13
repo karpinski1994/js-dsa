@@ -8,17 +8,18 @@ const pivot = (arr, start = 0, end = arr.length - 1) => {
   let pivot = arr[start];
   let swapId = start;
 
-  for(let i = start + 1; i < arr.length; i++) {
+  for(let i = start + 1; i < end; i++) {
     if (pivot > arr[i]) {
       swapId++;
       swap(arr, swapId, i);
     }
   }
+  swap(arr, start, swapId);
   return swapId
 }
 
 export const quickSort = (arr, left = 0, right = arr.length -1) => {
-  while (left < right) {
+  if (left < right) {
     let pivotId = pivot(arr, left, right);
 
     quickSort(arr, left, pivotId - 1)
