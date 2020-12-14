@@ -14,7 +14,7 @@ const pivot = (arr, start = 0, end = arr.length - 1) => {
       swap(arr, swapId, i);
     }
   }
-  swap(arr, start, swapId);
+  swap(arr, swapId, start);
   return swapId
 }
 
