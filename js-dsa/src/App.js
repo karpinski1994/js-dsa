@@ -2,9 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 import {quickSort} from './dsa/Sorting/QuickSort'
 import {mergeSort} from './dsa/Sorting/MergeSort'
+import {radixSort} from './dsa/Sorting/RadixSort'
 
 console.log('sort: ', quickSort([1,3,2,7,4,8,9]))
 console.log('merge: ', mergeSort([2,3,9,7,1,4]));
+console.log('radix: ', radixSort([2,3,9,7,1,4]));
 function App() {
   return (
     <div className="App">
