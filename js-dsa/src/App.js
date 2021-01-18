@@ -4,9 +4,20 @@ import {quickSort} from './dsa/Sorting/QuickSort'
 import {mergeSort} from './dsa/Sorting/MergeSort'
 import {radixSort} from './dsa/Sorting/RadixSort'
 
-console.log('sort: ', quickSort([1,3,2,7,4,8,9]))
-console.log('merge: ', mergeSort([2,3,9,7,1,4]));
-console.log('radix: ', radixSort([2,3,9,7,1,4]));
+// import {palindrome} from './dsa/Other/Palindrome';
+// import {adjacentElementsProduct} from './dsa/Other/LargestAdjacentNumbers';
+import {makeArrayConsecutive2} from './dsa/Other/Statues'
+
+
+// console.log(adjacentElementsProduct([3, 6, -2, -5, 7, 3]));
+// console.log(makeArrayConsecutive2([6, 2, 3, 8])); // 2, 3, 6, 8
+// console.log(makeArrayConsecutive2([0, 9]));
+// console.log(makeArrayConsecutive2([1,2, 7, 9]));
+// console.log(makeArrayConsecutive2([6, 5, 2, 1]));
+// console.log(makeArrayConsecutive2([7, 8, 2, 0]));
+// console.log(makeArrayConsecutive2([0, 3]));
+// console.log(makeArrayConsecutive2([1,2,3,4,5,6,7,8,9]));
+console.log(makeArrayConsecutive2([4, 2, 7, 18]));
 function App() {
   return (
     <div className="App">
